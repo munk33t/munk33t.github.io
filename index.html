@@ -1,374 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="bower/slick-carousel/slick/slick.css">
-	<link rel="stylesheet" href="bower/mdi/css/materialdesignicons.min.css">
-	<link href="css/style.css" rel="stylesheet">
-	<style>
-		
-	</style>
-	<title>Philip Choi</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Philip Choi — Vibe shooter, vibe coder.">
+  <title>Philip Choi · unphiltered.dev</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..500&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body id="main">
-	<header>
-		<nav>
-			<ul>
-				<li> <a href="#top">Top</a> </li>
-				<li> <a href="#projects">Projects</a> </li>
-				<li> <a href="#about-me">About</a> </li>
-				<li> <a href="#contact">Contact</a>	</li>
-			</ul>
-		</nav>
-	</header>
+<body class="unphil">
 
-	<div id="top" class="home section">
-		<div class="profile center-block">
+  <main>
 
-			<h1 class='my-name'>Philip Choi</h1>
-			<div class="profile-images center clickable card-flip">	
-				<div class="card-front">
-					<img class="profilePic" src="img/profile_pic.jpg">
-				</div>
-				<div class="card-back">
-					<img class="profilePic" src="img/profile_pic_archery.jpg">
-				</div>
-			</div>
-			<h2 class='my-doings'>Web Developer | DIY | Gamer | Archer</h2>
+    <section id="hero" class="hero">
+      <div class="arrow-trace" aria-hidden="true">
+        <svg viewBox="0 0 1000 500" preserveAspectRatio="none">
+          <path class="arrow-path" d="M -40 220 C 180 60, 420 380, 720 180" pathLength="1" vector-effect="non-scaling-stroke"/>
+          <g class="arrow-head" transform="translate(720 180) rotate(-18)">
+            <path d="M 0 0 L -10 -4 L -7 0 L -10 4 Z"/>
+          </g>
+        </svg>
+      </div>
 
-		</div>
-	</div>
-	
-	<div id="projects" class="projects section2">
-		<div class="center-block">
-		<h1 class="section-header">Projects</h1>
+      <div class="col">
+        <figure class="photo fade-in fade-in-d1">
+          <img src="img/profile_pic_archery.jpg" alt="Philip at full draw in kyudo gear.">
+        </figure>
 
-		<div class="projects-wrapper">
-				
-			<div class="prev-project">
-				<i class="mdi mdi-arrow-left-bold-hexagon-outline"></i>
-			</div>
+        <p class="eyebrow fade-in fade-in-d2">Philip Choi · unphiltered.dev</p>
 
-			<div class="projects-carousel">
+        <h1 class="display fade-in fade-in-d3">Philip Choi</h1>
 
-				<div class="project">
-					<h3><span class='project-name clickable' data-target='.project-details.muviegoer'>MuvieGoer</span></h3>
-					<div class="project-details muviegoer">
-						<div class="thumbnail">
-							<img src="img/muviegoer.png" alt="MuvieGoer">
-						</div>
-						<div class="description">
-							<a href="https://muviegoer.herokuapp.com" target='#'>Check it out!</a>
-							<a href="https://github.com/grjkz/muviegoer" target="#">Github</a>
-							<p>
-								Enjoy watching movies? Enjoy being a critic? Then is for you! Sign up to comment and rate the movies in our database. Use the search feature to find a movie through its title or synopsis. Just remember, you only get one review per movie.
-							</p>
-							<p>Technology Used:</p>
-							<ul>
-								<li>Ruby on Rails</li>
-								<li>PostgreSQL</li>
-								<li>Amazon S3</li>
-								<li>ActionMailer</li>
-								<li>Paperclip</li>
-								<li>Materialize</li>
-								<li>jQuery</li>
-								<li>Rateyo</li>
-								<li>Friendly Id</li>
-							</ul>
-						</div>
-					</div>
-				</div>
+        <p class="oneliner fade-in fade-in-d4">Vibe shooter, vibe coder.</p>
 
-				<div class="project">
-					<h3><span class='project-name clickable' data-target='.project-details.pcweather'>PCWeather</span></h3>
-					<div class="project-details pcweather">
-						<div class="thumbnail">
-							<img src="img/pcweather.png" alt="PCWeather">
-						</div>
-						<div class="description">
-							<a href="https://pcweather.herokuapp.com" target='#'>Check it out!</a>
-							<p>
-								Get the latest weather and forecast! Includes history data for the previous 3 days of your searched location. Sign up to track your five previous search queries!
-							</p>
-							<p>Technology Used:</p>
-							<ul>
-								<li>Node.js / Express</li>
-								<li>MongoDB / Mongoose</li>
-								<li>jQuery Validate</li>
-								<li>Google Charts</li>
-								<li>EJS / HTML / CSS / Bootstrap</li>
-							</ul>
-						</div>
-					</div>
-				</div>
+        <p class="hero-caption fade-in fade-in-d4">Kyudo · Shodan</p>
+      </div>
+    </section>
 
-				<div class="project">
-					<h3><span class='project-name clickable' data-target='.project-details.stamina-calculator'>Stamina Calculator</span></h3>
-					<div class="project-details stamina-calculator">
-						<div class="thumbnail">
-							<img src="img/stamina_calculator.png" alt="Stamina Calculator">
-						</div>
-						<div class="description">
-							<a href="http://mirukut.github.io/stamina_calculator.html" target='#'>Check it out!</a>
-							<a href="https://github.com/grjkz/Stamina-Calculator-for-games" target="#">Github</a>
-							<p>
-								Do you play mobile games? They've become very popular over the years and is the greatest source of revenue for many. A lot of these game have a "stamina" system in place that limits players to a certain number of actions and recovers their stamina over a period of time. This is a tool to help players (mostly the avid ones) calculate how much stamina they win gain in a specified period of time as well as a few other features.
-							</p>
-							<p>Technology Used:</p>
-							<ul>
-								<li>HTML/CSS</li>
-								<li>Mix of Vanilla Javascript and jQuery</li>
-							</ul>
-						</div>
-					</div>
-				</div>
+    <div class="star-connector" aria-hidden="true">✧</div>
 
-				<div class="project">
-					<h3><span class='project-name clickable' data-target='.project-details.fresco-news'>Fresco News</span></h3>
-					<div class="project-details fresco-news">
-						<div class="thumbnail">
-							<img src="img/fresco_thumb.png" alt="Fresco News">
-						</div>
-						<div class="description">
-							<a href="https://fresconews.com/" target='#'>Check it out!</a>
-							<!-- <a href="projects/fresco/index.html" target='#'>Check it out!</a> -->
-							<a href="https://github.com/grjkz/fresco_news" target="#">Github</a>
-							<p>
-								A landing page I created for Fresco News. It includes a nested carousel for images and articles. Supports IE8+ history API, enabling backward and forward SPA browser navigation for those with trigger-happy fingers. Velocity.js is used for many of the animations and media querying. It is also responsive for small devices.
-								<br><br>	
-								<span class='tip'>Try scrolling after opening the "Tryout Fresco News" card in "News Dashboard"</span>
-							</p>
-							<p>Technology Used:</p>
-							<ul>
-								<li>Slick</li>
-								<li>Velocity</li>
-								<li>html5-history-api</li>
-								<li>jQuery</li>
-							</ul>
-						</div>
-					</div>
-				</div>
+    <section id="now" class="mantis" aria-labelledby="now-heading">
+      <div class="col">
+        <p class="mantis-kicker">Currently building</p>
+        <h2 id="now-heading" class="mantis-title">
+          <em>mantis‑analyzer</em> — a small AI coach for the archery range.
+        </h2>
+        <div class="mantis-body">
+          <p>
+            It watches a shot — grouping, form, release — and writes back notes
+            the way a patient coach would. Python and FastAPI on the backend,
+            SvelteKit on the front, Claude for the read. It's the one project
+            I'm spending time on right now, which is convenient: it sits
+            squarely at the crossing of the two things I do.
+          </p>
+          <p>
+            I write code. Then I go shoot. Then the shots become data, the
+            data becomes code, and the code quietly makes the shots better.
+          </p>
+        </div>
+        <div class="mantis-links">
+          <a href="https://github.com/grjkz/mantis-analyzer" target="_blank" rel="noopener">github ↗</a>
+          <a href="https://shots.unphiltered.dev" target="_blank" rel="noopener">live ↗</a>
+          <span class="caveat">(invite only)</span>
+        </div>
+      </div>
 
-				<div class="project">
-					<h3><span class='project-name clickable' data-target='.project-details.ph4zergame'>ph4zerGame</span></h3>
-					<div class="project-details ph4zergame">
-						<div class="thumbnail">
-							<img src="img/ph4zer_thumb.png" alt="ph4zerGame">
-						</div>
-						<div class="description">
-							<a href="https://ph4zer.herokuapp.com">Play Game!</a>
-							<a href="https://github.com/grjkz/ph4zerGame" target="#">Github</a>
-							<p>
-								Collect coins to purchase shields to defend yourself, a shotgun for wide spread shots, even a Kame**meha to obliterate everything!
-								<br><br>
-								This multiplayer 2D shooter game for the browser is intended for computers with at least a 1280x720 resolution. Try it out with your friend and show them who's boss! 
-								<br><br>
-								SEXY VERSION 2!! Please download the repo and play it on your network.
-							</p>
-							<p>Technology Used:</p>
-							<ul>
-								<li>Phaser.js</li>
-								<li>Socket.io</li>
-								<li>jQuery</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-		
-				<div class="project">
-					<h3><span class='project-name clickable' data-target='.project-details.absurdnyc'>Absurd NYC</span></h3>
-					<div class="project-details absurdnyc">
-						<div class="thumbnail">
-							<img src="img/absurd_thumb.png" alt="Absurd NYC">
-						</div>
-						<div class="description">
-							<a href="https://guarded-coast-3610.herokuapp.com" target="#">Check it out!</a>
-							<a href="https://github.com/putzOnTheFritz/project_three" target="#">Github</a>
-							<p>
-								Absurd NYC is a 4 person group project that uses NYC stereotypes to dynamically deliver a "story" or perhaps a real adventure for one to use as a guide to explore NYC.
-							</p>
-							<p>Technology Used:</p>
-							<ul>
-								<li>Ruby on Rails</li>
-								<li>JQuery</li>
-								<li>PostgreSQL</li>
-								<li>Yelp API</li>
-								<li>Instagram API</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-						
-				<div class="project">
-					<h3><span class='project-name clickable' data-target='.project-details.thebasement'>The Basement</span></h3>
-					<div class="project-details thebasement">
-						<div class="thumbnail">
-							<img src="img/basement_thumb.png" alt="The Basement">
-						</div>
-						<div class="description">
-							<a href="http://thebasement-forum.herokuapp.com/" target='#'>Enter the Mancave!</a>
-							<a href="https://github.com/grjkz/grjkzP2.github.io" target="#">Github</a>
-							<p>
-								This forum project is built with a game theme. It's a basic forum that allows users to post messages and engage in conversations while up or downvoting message topics. It also includes user sessions so only registered members are able to POST.
-							</p>
-							<p>Technology Used:</p>
-							<ul>
-								<li>Node.js</li>
-								<li>Express</li>
-								<li>SQLite3</li>
-								<li>EJS</li>
-								<li>JQuery</li>
-								<li>Foundation.css</li>
-							</ul>
-						</div>
-					</div>
-				</div>
+      <div class="mantis-gallery">
+        <figure>
+          <div class="mantis-tile mantis-tile--coaching">
+            <img src="img/mantis_coaching_v2.png" alt="A card of AI coaching notes — what went well, key observation, session progression, top faults, recommended drills." loading="lazy">
+          </div>
+          <figcaption>fig. a — coaching notes, written back to the archer.</figcaption>
+        </figure>
+        <div class="mantis-stack">
+          <figure>
+            <div class="mantis-tile mantis-tile--trace">
+              <img src="img/mantis_trace_v2.png" alt="A single arrow's shot path, plotted from sensor data — release marked, follow-through traced." loading="lazy">
+            </div>
+            <figcaption>fig. b — every shot, traced.</figcaption>
+          </figure>
+          <figure>
+            <div class="mantis-tile mantis-tile--sessions">
+              <img src="img/mantis_sessions_v2.png" alt="A list of training sessions with dates and shot counts." loading="lazy">
+            </div>
+            <figcaption>fig. c — training log; each row, an evening at the range.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
 
-				<div class="project">
-					<h3><span class='project-name clickable' data-target='.project-details.blackjack'>Blackjack</span></h3>
-					<div class="project-details blackjack">
-						<div class="thumbnail">
-							<img src="img/bj_thumb.png" alt="BlackJack">
-						</div>
-						<div class="description">
-							<a href="projects/blackjack/index.html" target='#'>Check it out!</a>
-							<a href="https://github.com/grjkz/blackjack" target="#">Github</a>
-							<p>
-								This Blackjack game is created for the enjoyment of those who like fast paced games. It includes animate.css for use as cues for quick players that don't especially enjoy reading while earning lots of dough. This version of Blackjack enables the player to split one time.
-							</p>
-							<p>Technology Used:</p>
-							<ul>
-								<li>JQuery</li>
-								<li>Foundation.css</li>
-								<li>Animate.css</li>
-							</ul>
-						</div>
-					</div>
-				</div>
+    <span class="end-mark" aria-hidden="true"></span>
 
-			</div> <!-- end projects-carousel -->
+    <footer class="contact">
+      <div class="contact-row">
+        <a href="https://github.com/grjkz" target="_blank" rel="noopener" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.1.79-.25.79-.56v-2c-3.2.7-3.87-1.37-3.87-1.37-.52-1.33-1.27-1.68-1.27-1.68-1.04-.71.08-.7.08-.7 1.15.08 1.75 1.18 1.75 1.18 1.03 1.76 2.69 1.25 3.35.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.18-3.1-.12-.29-.51-1.46.11-3.04 0 0 .97-.31 3.17 1.18a10.94 10.94 0 0 1 5.78 0c2.2-1.49 3.17-1.18 3.17-1.18.62 1.58.23 2.75.11 3.04.73.81 1.18 1.84 1.18 3.1 0 4.42-2.69 5.4-5.25 5.68.41.36.77 1.06.77 2.13v3.16c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
+          <span>github</span>
+        </a>
+        <a href="https://linkedin.com/in/philipchoicodes" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5.01 2.5 2.5 0 0 1 0-5.01zM3 9h4v12H3zM9 9h3.83v1.64h.05c.53-1 1.84-2.06 3.78-2.06 4.05 0 4.8 2.66 4.8 6.13V21h-4v-5.38c0-1.28-.02-2.92-1.78-2.92-1.78 0-2.05 1.39-2.05 2.83V21H9z"/></svg>
+          <span>linkedin</span>
+        </a>
+        <a href="https://instagram.com/munk33t" target="_blank" rel="noopener" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="3" y="3" width="18" height="18" rx="4.5"/>
+            <circle cx="12" cy="12" r="4"/>
+            <circle cx="17.4" cy="6.6" r="0.6" fill="currentColor" stroke="none"/>
+          </svg>
+          <span>instagram</span>
+        </a>
+      </div>
+      <p class="footer-mark">unphiltered.dev · 2026</p>
+    </footer>
 
-			<div class="next-project">
-				<i class="mdi mdi-arrow-right-bold-hexagon-outline"></i>
-			</div>
+  </main>
 
-			</div> <!-- end projects-wrapper -->
-
-		</div> <!-- end center-block -->
-	</div> <!-- end #projects -->
-
-	
-	<div id="about-me" class="about-me section">
-		<div class="center-block">
-			<article class='center'>
-				<h1>About Me</h1>
-					<p> 
-						My name is Philip Choi and I was born and raised in NYC. After graduating from college and doing some life things, I left the states to work in Japan for two years and experienced life outside the bustling city I'm used to in a very hot and humid climate in Tochigi prefecture. After struggling with bike rides up and down very steep hills around my large town, obtaining Shodan in Kyudo (wish I had time to get to Sandan), freaking out from tremors, and generally experiencing life in Japan, I returned to America and sought a career as a programmer - something I had always wanted to do since I was younger. 
-					</p>
-					<p>
-						Growing up in the early stages of developing technology, it was natural for me to have an interest. I didn't have the luxury of getting my hands on what I wanted so through friends and school is where most of my exposure took place. I have always been curious about how things work and enjoy disassembling them to figure it out, be it hardware or the mind.
-					</p>
-
-				<h1> Professional Experience </h1>
-					<p>
-						I enjoy learning and being great at what I do. I strive to learn more about development and its best practices to build scalable solutions and clean code. My skills are currently more focused on Salesforce development. I have been working to help many companies/clients impove their business processes with new functionality and upgrade old, outdated components.
-					</p>
-
-				<h1>Tech Stuff</h1>
-					<div class="float-left tech-list">
-						<div>Front-End</div>
-						<ul>
-							<li>Salesforce Lightning</li>
-							<li>Salesforce Visualforce</li>
-							<li>JavaScript</li>
-							<li>HTML</li>
-							<li>CSS</li>
-							<li>jQuery</li>
-							<li>AngularJS</li>
-							<li>ReactJS</li>
-							<li>BackboneJS</li>
-						</ul>
-					</div>
-					<div class="float-left tech-list">
-						<div>Back-End</div>
-						<ul>
-							<li>Apex</li>
-							<li>Node.js</li>
-							<li>Ruby on Rails</li>
-							<li>MySQL</li>
-							<li>PostgreSQL</li>
-							<li>SQLite</li>
-						</ul>
-					</div>
-					<div class="float-left tech-list">
-						<div>Other Stuff</div>
-						<ul>
-							<li>Salesforce</li>
-							<li>Git</li>
-							<li>SVN</li>
-							<li>Java (not coffee)</li>
-							<li>Socket.io</li>
-							<li>Phaser.io</li>
-							<li>C++</li>
-						</ul>
-					</div>
-
-				<h1 class="clear-float"> Interests </h1>
-					<p> 
-						My hobbies mostly revolve around video games. My favorite genres are RPG and action-adventure. I am also great at first person shooters and prefer to play them on the PC (master race!). My other hobbies include eating, bowling, billiards, snowboarding, handball (not the olympic kind), biking/cycling, Kyudo (Japanese archery), and going to meetups.
-					</p>
-
-			</article>
-		</div>
-	</div> <!-- end about-me -->
-
-	
-	<div id="contact" class='contact section2'>
-		<div class="contact-wrapper center-block">
-			<p class="section-header">Get in Touch:</p>
-			<!-- resume -->
-			<!-- <a href="https://drive.google.com/file/d/1upvgHrE35yyYu7B1iefiDIDmCA9m33Hp/view?usp=sharing" target="#"><i class="mdi mdi-file-document"></i></a> -->
-			<!-- email me -->
-			<div class="email-me-wrapper">
-				<a id="contact-me" href=""><i class="mdi mdi-email"></i></a>
-					<div id="contact-card">
-						<div class="contact-card-header">
-							<b>Purpose of Email:</b>
-							<span><i class="mdi mdi-close clickable" onclick="closeModal('#contact-card')"></i></span>
-						</div>					
-						<div class="contact-card-form">
-							<select id="contact-purpose">
-								<option value="Job Opportunity">Job Opportunity</option>
-								<option value="Inquiry">Inquiry</option>
-								<option value="Other">Other</option>
-							</select>
-
-							<a id="send-email" href="">CREATE EMAIL</a>
-						</div>
-					</div>
-			</div>
-			<!-- github -->
-			<a href="https://github.com/grjkz" target='#'><i class="mdi mdi-github-circle"></i></a>
-			<!-- linkedin -->
-			<a href="https://www.linkedin.com/in/philipchoicodes" target='#'><i class="mdi mdi-linkedin-box"></i></a>
-		</div>
-	</div>
-	
-
-	<script>
-	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-	  ga('create', 'UA-73727488-2', 'auto');
-	  ga('send', 'pageview');
-	</script>
-
-<script src="bower/jquery/dist/jquery.min.js"></script>
-<script src="bower/slick-carousel/slick/slick.min.js"></script>
-<script src="bower/velocity/velocity.min.js"></script>
-<script src="javascripts/main.js"></script>
 </body>
 </html>
